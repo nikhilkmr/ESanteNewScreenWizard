@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="ESante New Screen Wizard"
+            id="ESanteNewScreenWizard">
+      </category>
+      <wizard
+            name="Evolan Sante New Screen Wizard"
+            icon="icons/sample.gif"
+            category="ESanteNewScreenWizard"
+            class="esantenewscreenwizard.wizards.ESanteNewScreenWizard"
+            id="esantenewscreenwizard.wizards.ESanteNewScreenWizard">
+      </wizard>
+   </extension>
+
+</plugin>
