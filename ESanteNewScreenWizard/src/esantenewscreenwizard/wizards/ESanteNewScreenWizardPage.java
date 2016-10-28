@@ -48,7 +48,7 @@ public class ESanteNewScreenWizardPage extends NewTypeWizardPage {
 	public ESanteNewScreenWizardPage(ISelection selection) {
 		super(true,"wizardPage");
 		setTitle("Evolan sante new screen.");
-		setDescription("This wizard creates necessary templates (Pop,Map,ActionForm and Jsps), which are required to depelop new screen in Evolan Sante.");
+		setDescription("This wizard creates necessary (Pop,Map,ActionForm and Jsps), which are required to depelop new screen in Evolan Sante.");
 		this.selection = selection;
 	}
 
@@ -126,17 +126,7 @@ public class ESanteNewScreenWizardPage extends NewTypeWizardPage {
 				handleBrowse();
 			}
 		});
-		Label label6 = new Label(container, SWT.NULL);
-		label6.setText("&File name:");
-
-		fileText = new Text(container, SWT.BORDER | SWT.SINGLE);
-		GridData gd4 = new GridData(GridData.FILL_HORIZONTAL);
-		fileText.setLayoutData(gd4);
-		fileText.addModifyListener(new ModifyListener() {
-			public void modifyText(ModifyEvent e) {
-				dialogChanged();
-			}
-		});
+		
 		initialize();
 		dialogChanged();
 		setControl(container);
