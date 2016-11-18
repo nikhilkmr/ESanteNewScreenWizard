@@ -72,7 +72,11 @@ public class ESanteNewScreenWizardPage extends NewTypeWizardPage {
 	    domain.add("pr");
 	    domain.add("rc");
 	    domain.add("co");
-		
+		domain.addModifyListener(new ModifyListener() {
+			public void modifyText(ModifyEvent e) {
+				dialogChanged();
+			}
+		});
 	    Label label2 = new Label(container, SWT.NULL);
 		label2.setText("&Transaction Code:");
 	    GridData gd1 = new GridData(GridData.FILL_HORIZONTAL);

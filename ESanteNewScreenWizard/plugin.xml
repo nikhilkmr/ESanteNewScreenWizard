@@ -16,5 +16,31 @@
             id="esantenewscreenwizard.wizards.ESanteNewScreenWizard">
       </wizard>
    </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="esantenewscreenwizard.preferences.ESantePreferencePage"
+            id="esantenewscreenwizard.preferences.ESantePreferencePage"
+            name="ESante Preferences">
+      </page>
+      <page
+            class="esantenewscreenwizard.preferences.ESantePreferenceTemplatePage"
+            id="esantenewscreenwizard.preferences.ESantePreferenceTemplatePage"
+            name="Template"
+            category="esantenewscreenwizard.preferences.ESantePreferencePage">
+      </page>
+      <page
+            class="esantenewscreenwizard.preferences.ESantePreferenceDatabasePage"
+            id="esantenewscreenwizard.preferences.ESantePreferenceDatabasePage"
+            name="Database"
+            category="esantenewscreenwizard.preferences.ESantePreferencePage">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="esantenewscreenwizard.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
 
 </plugin>
